@@ -8,29 +8,41 @@
 </head>
 <body>
     <header>
-        Smart Agriculture
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#features">Features</a>
+            <a href="#contact">Contact</a>
+        </nav>
     </header>
-    <div class="container">
-        <div class="feature">
-            <h2>Automated Irrigation</h2>
-            <p>Smart systems to water crops efficiently based on real-time data.</p>
-        </div>
-        <div class="feature">
-            <h2>Soil Monitoring</h2>
-            <p>Use IoT sensors to check soil health and improve yield.</p>
-        </div>
-        <div class="feature">
-            <h2>Weather Forecasting</h2>
-            <p>AI-powered predictions for better farming decisions.</p>
-        </div>
-    </div>
-    <button id="alertButton">Click for Smart Tips</button>
-    <footer>
-        &copy; 2025 Smart Agriculture. All rights reserved.
-    </footer>
+
+    <section id="home">
+        <h1>Welcome to Smart Agriculture</h1>
+        <p>Revolutionizing farming with technology.</p>
+    </section>
+
+    <section id="features">
+        <h2>Our Features</h2>
+        <ul>
+            <li>Automated Irrigation</li>
+            <li>Soil Monitoring</li>
+            <li>Weather Forecasting</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
     <script src="script.js"></script>
 </body>
 </html>
+
 
 
 
