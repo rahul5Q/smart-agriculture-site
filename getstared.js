@@ -1,4 +1,4 @@
-// Smooth scrolling for navigation links
+// Adding smooth scroll for navigation
 document.querySelectorAll('nav a').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -8,7 +8,7 @@ document.querySelectorAll('nav a').forEach(anchor => {
     });
 });
 
-// Form validation
+// Simple form validation (you can expand this)
 document.getElementById('contact-form').addEventListener('submit', function (e) {
     e.preventDefault();
     const name = document.getElementById('name').value;
@@ -16,7 +16,8 @@ document.getElementById('contact-form').addEventListener('submit', function (e) 
     const message = document.getElementById('message').value;
 
     if (name && email && message) {
-        alert("Thank you, " + name + "! Your message has been sent.");
+        alert("Thank you for contacting us, " + name + "!");
+        // Reset form after submission
         this.reset();
     } else {
         alert("Please fill out all fields.");
